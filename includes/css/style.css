@@ -1,0 +1,255 @@
+@font-face {
+font-family: 'Roboto Condensed';
+src: url('../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Roboto Condensed';
+src: url('../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf');
+font-weight: bold;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Roboto Condensed';
+src: url('../fonts/Roboto_Condensed/RobotoCondensed-Italic.ttf');
+font-weight: normal;
+font-style: italic;
+}
+
+@font-face {
+font-family: 'Kalam';
+src: url('../fonts/Kalam/Kalam-Bold.ttf');
+font-weight: bold;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Cookie';
+src: url('../fonts/Cookie/Cookie-Regular.ttf');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Open Sans';
+src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+font-weight: normal;
+font-style: normal;
+}
+
+body {
+  margin: 0;
+  background: url("../../img/backgrounds/wood-desk.jpg") no-repeat center fixed;
+  font-family: 'Roboto Condensed';
+}
+
+#laptop {
+  margin: 0 auto;
+  margin-top: 5vh;
+  width: 48vw;
+  height: 22vw;
+  color: white;
+  text-align: center;
+  background: url(../../img/backgrounds/laptop.png) no-repeat center;
+  background-size: contain;
+}
+#laptop div {
+  width: 27vw;
+  margin: 0 auto;
+  padding-top: 3vw;
+}
+#laptop h1 {
+  font-size: 2.7vw;
+  font-weight: bold;
+  margin: 1vw 0;
+}
+#laptop h2 {
+  font-size: 1.5vw;
+  font-weight: normal;
+  margin: 1vw 0;
+}
+
+#projects {
+  position: absolute;
+  top: 2vw;
+  right: 2vw;
+}
+
+#languages {
+  position: absolute;
+  width: 29vw;
+  top: 5vh;
+  left: 3vw;
+}
+#languages img {
+  height: 7vw;
+  margin: 0.5vw;
+}
+
+#mail {
+  position: absolute;
+  top: 58vh;
+  left: 35vw;
+  height: 8vw;
+  width: 14vw;
+  text-align: center;
+  background: url(../../img/backgrounds/envelop.png) no-repeat center;
+  background-size: contain;
+  -ms-transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
+#mail a {
+  text-decoration: none;
+  color: #1a237e;
+  font-family: 'Kalam';
+  font-weight: bold;
+  line-height: 9vw;
+  font-size: 1vw;
+}
+
+#contact {
+  position: absolute;
+  top: 55vh;
+  left: 48vw;
+  height: 8vw;
+  width: 14vw;
+  text-align: center;
+  background: url(../../img/backgrounds/postcard.png) no-repeat center;
+  background-size: contain;
+  -ms-transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+#contact a {
+  text-decoration: none;
+}
+#contact img {
+  height: 45%;
+  margin: 0.75vw;
+  margin-top: 2.5vw;
+}
+
+#experience {
+  position: absolute;
+  top: 50vh;
+  left: 4vw;
+  height: 19vw;
+  width: 25vw;
+  background: url(../../img/backgrounds/passport.png) no-repeat center;
+  background-size: contain;
+  -ms-transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+  display: inline-block;
+}
+#experience a {
+  text-decoration: none;
+  cursor: pointer;
+}
+#experience_stamps {
+  float: left;
+  margin-top: 6%;
+  margin-left: 5%;
+  width: 41%;
+  height: 85%;
+}
+#experience_stamps img {
+  position: relative;
+}
+#experience_stamps img:hover {
+  cursor: pointer;
+}
+#experience_details {
+  float: left;
+  margin-top: 6%;
+  margin-left: 11%;
+  width: 38%;
+  height: 85%;
+  font-family: 'Open Sans';
+  display: none;
+}
+#experience_details h3 {
+  margin: 0.5vw 0;
+  font-family: 'Cookie';
+  font-size: 1.7vw;
+}
+#experience_details p {
+  margin: 0;
+  font-size: 1vw;
+  text-justify: inter-word;
+}
+#experience_details i {
+  margin-top: 0.7vw;
+  font-size: 0.8vw;
+  font-style: italic;
+}
+
+.card {
+  width: 26vw;
+  margin: 0.5vw;
+  background-color: #fff9c4;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+.card p {
+  font-size: 1.2vw;
+  margin: 0;
+  color: #263238;
+}
+.card_img {
+  width: 30%;
+  text-align: center;
+}
+.card_img img {
+  width: 55%;
+  margin-top: 0.5vw;
+}
+.card_txt {
+  width: 70%;
+}
+.card_title:hover {
+  filter: brightness(150%);
+}
+.card_title a {
+  text-decoration: none;
+}
+.card_title h3 {
+  display: inline-block;
+  font-size: 1.5vw;
+  margin: 0;
+  color: #1c2429;
+}
+.card_title img {
+  display: inline-block;
+  margin-left: 1vw;
+  height: 1.2vw;
+}
+.card_description {
+  overflow-y: hidden;
+	max-height: 300px;
+  transition: all 1s cubic-bezier(.25,.8,.25,1);
+}
+.card_description.closed {
+	max-height: 0;
+}
+.card_technos p {
+  font-style: italic;
+  margin-top: 0.5vw;
+}
+.card_arrow {
+  text-align: center;
+}
+.card_arrow img {
+  height: 2vw;
+}
+.card_arrow:hover {
+  filter: brightness(150%);
+  cursor: pointer;
+}

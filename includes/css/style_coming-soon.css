@@ -1,0 +1,22 @@
+@font-face {
+font-family: 'Kaushan Script';
+src: url('../fonts/Kaushan_Script/KaushanScript-Regular.ttf');
+font-weight: normal;
+font-style: normal;
+}
+
+body {
+  font-family: 'Kaushan Script', Ubuntu, Arial;
+  background-color: #ff6f00;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+}
+
+#coming_soon {
+  margin-top: 50vh;
+  transform: translateY(-50%);
+}
